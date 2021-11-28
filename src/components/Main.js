@@ -14,7 +14,6 @@ const useStyles = makeStyles({
 });
 
 const Main = ({ name }) => {
-  console.log('メインの名前'+name)
   const classes = useStyles();
   return (
     <div className={classes.root}>
