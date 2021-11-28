@@ -6,7 +6,7 @@ import config from '../config.json';
 console.log({config});
 
 export default () => {
-  const [name, setName] = useState('');
+  const [name, setName] = useState('田中');
   if(config.signInEnabled === true && name === '') {
     return <SignIn setName={setName} />;
   } else {
