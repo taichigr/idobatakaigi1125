@@ -1,0 +1,840 @@
+[debug] [2021-12-01T01:00:50.021Z] ----------------------------------------------------------------------
+[debug] [2021-12-01T01:00:50.025Z] Command:       /Users/nishiguchitaichi/.nodebrew/node/v12.18.4/bin/node /Users/nishiguchitaichi/Desktop/udemy_hamusan/chat-application/idobatakaigi1125/node_modules/.bin/firebase deploy
+[debug] [2021-12-01T01:00:50.026Z] CLI Version:   8.12.1
+[debug] [2021-12-01T01:00:50.026Z] Platform:      darwin
+[debug] [2021-12-01T01:00:50.026Z] Node Version:  v12.18.4
+[debug] [2021-12-01T01:00:50.027Z] Time:          Wed Dec 01 2021 10:00:50 GMT+0900 (Japan Standard Time)
+[debug] [2021-12-01T01:00:50.028Z] ----------------------------------------------------------------------
+[debug] [2021-12-01T01:00:50.028Z] 
+[debug] [2021-12-01T01:00:50.043Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-12-01T01:00:50.044Z] > authorizing via signed-in user
+[debug] [2021-12-01T01:00:50.044Z] [iam] checking project chat-appliation-idobatakaigi for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-12-01T01:00:50.048Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/chat-appliation-idobatakaigi:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-12-01T01:00:50.974Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 01 Dec 2021 01:00:50 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=630","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-01T01:00:50.978Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/chat-appliation-idobatakaigi  
+ 
+[debug] [2021-12-01T01:00:51.540Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 01 Dec 2021 01:00:51 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'chat-appliation-idobatakaigi'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-12-01T01:00:51.547Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/chat-appliation-idobatakaigi-default-rtdb/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-12-01T01:00:52.718Z] <<< HTTP RESPONSE 500 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Wed, 01 Dec 2021 01:00:52 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-01T01:00:52.718Z] <<< HTTP RESPONSE BODY {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2021-12-01T01:00:52.931Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500,
+    "body": {
+      "error": {
+        "code": 500,
+        "message": "Internal error encountered.",
+        "status": "INTERNAL"
+      }
+    },
+    "headers": {
+      "vary": "X-Origin, Referer, Origin,Accept-Encoding",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Wed, 01 Dec 2021 01:00:52 GMT",
+      "server": "ESF",
+      "cache-control": "private",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"",
+      "accept-ranges": "none",
+      "transfer-encoding": "chunked"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "firebasehosting.googleapis.com",
+        "port": 443,
+        "hostname": "firebasehosting.googleapis.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1beta1/sites/chat-appliation-idobatakaigi-default-rtdb/versions",
+        "path": "/v1beta1/sites/chat-appliation-idobatakaigi-default-rtdb/versions",
+        "href": "https://firebasehosting.googleapis.com/v1beta1/sites/chat-appliation-idobatakaigi-default-rtdb/versions"
+      },
+      "method": "POST"
+    }
+  }
+}
+[debug] [2021-12-01T01:01:15.957Z] ----------------------------------------------------------------------
+[debug] [2021-12-01T01:01:15.959Z] Command:       /Users/nishiguchitaichi/.nodebrew/node/v12.18.4/bin/node /Users/nishiguchitaichi/Desktop/udemy_hamusan/chat-application/idobatakaigi1125/node_modules/.bin/firebase deploy
+[debug] [2021-12-01T01:01:15.960Z] CLI Version:   8.12.1
+[debug] [2021-12-01T01:01:15.960Z] Platform:      darwin
+[debug] [2021-12-01T01:01:15.960Z] Node Version:  v12.18.4
+[debug] [2021-12-01T01:01:15.961Z] Time:          Wed Dec 01 2021 10:01:15 GMT+0900 (Japan Standard Time)
+[debug] [2021-12-01T01:01:15.961Z] ----------------------------------------------------------------------
+[debug] [2021-12-01T01:01:15.961Z] 
+[debug] [2021-12-01T01:01:15.967Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-12-01T01:01:15.968Z] > authorizing via signed-in user
+[debug] [2021-12-01T01:01:15.969Z] [iam] checking project chat-appliation-idobatakaigi for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-12-01T01:01:15.972Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/chat-appliation-idobatakaigi:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-12-01T01:01:16.889Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 01 Dec 2021 01:01:16 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=625","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-01T01:01:16.895Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/chat-appliation-idobatakaigi  
+ 
+[debug] [2021-12-01T01:01:17.497Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 01 Dec 2021 01:01:17 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'chat-appliation-idobatakaigi'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-12-01T01:01:17.504Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/chat-appliation-idobatakaigi-default-rtdb/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-12-01T01:01:18.623Z] <<< HTTP RESPONSE 500 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Wed, 01 Dec 2021 01:01:18 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-01T01:01:18.624Z] <<< HTTP RESPONSE BODY {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2021-12-01T01:01:18.832Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500,
+    "body": {
+      "error": {
+        "code": 500,
+        "message": "Internal error encountered.",
+        "status": "INTERNAL"
+      }
+    },
+    "headers": {
+      "vary": "X-Origin, Referer, Origin,Accept-Encoding",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Wed, 01 Dec 2021 01:01:18 GMT",
+      "server": "ESF",
+      "cache-control": "private",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"",
+      "accept-ranges": "none",
+      "transfer-encoding": "chunked"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "firebasehosting.googleapis.com",
+        "port": 443,
+        "hostname": "firebasehosting.googleapis.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1beta1/sites/chat-appliation-idobatakaigi-default-rtdb/versions",
+        "path": "/v1beta1/sites/chat-appliation-idobatakaigi-default-rtdb/versions",
+        "href": "https://firebasehosting.googleapis.com/v1beta1/sites/chat-appliation-idobatakaigi-default-rtdb/versions"
+      },
+      "method": "POST"
+    }
+  }
+}
+[debug] [2021-12-01T01:03:44.606Z] ----------------------------------------------------------------------
+[debug] [2021-12-01T01:03:44.609Z] Command:       /Users/nishiguchitaichi/.nodebrew/node/v12.18.4/bin/node /Users/nishiguchitaichi/Desktop/udemy_hamusan/chat-application/idobatakaigi1125/node_modules/.bin/firebase deploy
+[debug] [2021-12-01T01:03:44.609Z] CLI Version:   8.12.1
+[debug] [2021-12-01T01:03:44.609Z] Platform:      darwin
+[debug] [2021-12-01T01:03:44.609Z] Node Version:  v12.18.4
+[debug] [2021-12-01T01:03:44.610Z] Time:          Wed Dec 01 2021 10:03:44 GMT+0900 (Japan Standard Time)
+[debug] [2021-12-01T01:03:44.611Z] ----------------------------------------------------------------------
+[debug] [2021-12-01T01:03:44.611Z] 
+[debug] [2021-12-01T01:03:44.617Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-12-01T01:03:44.618Z] > authorizing via signed-in user
+[debug] [2021-12-01T01:03:44.618Z] [iam] checking project chat-appliation-idobatakaigi for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-12-01T01:03:44.621Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/chat-appliation-idobatakaigi:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-12-01T01:03:45.486Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 01 Dec 2021 01:03:45 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=634","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-01T01:03:45.488Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/chat-appliation-idobatakaigi  
+ 
+[debug] [2021-12-01T01:03:46.099Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 01 Dec 2021 01:03:45 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'chat-appliation-idobatakaigi'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-12-01T01:03:46.106Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/chat-appliation-idobatakaigi-default-rtdb/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-12-01T01:03:47.225Z] <<< HTTP RESPONSE 500 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Wed, 01 Dec 2021 01:03:47 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-01T01:03:47.226Z] <<< HTTP RESPONSE BODY {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2021-12-01T01:03:47.472Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500,
+    "body": {
+      "error": {
+        "code": 500,
+        "message": "Internal error encountered.",
+        "status": "INTERNAL"
+      }
+    },
+    "headers": {
+      "vary": "X-Origin, Referer, Origin,Accept-Encoding",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Wed, 01 Dec 2021 01:03:47 GMT",
+      "server": "ESF",
+      "cache-control": "private",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"",
+      "accept-ranges": "none",
+      "transfer-encoding": "chunked"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "firebasehosting.googleapis.com",
+        "port": 443,
+        "hostname": "firebasehosting.googleapis.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1beta1/sites/chat-appliation-idobatakaigi-default-rtdb/versions",
+        "path": "/v1beta1/sites/chat-appliation-idobatakaigi-default-rtdb/versions",
+        "href": "https://firebasehosting.googleapis.com/v1beta1/sites/chat-appliation-idobatakaigi-default-rtdb/versions"
+      },
+      "method": "POST"
+    }
+  }
+}
+[debug] [2021-12-01T01:06:15.074Z] ----------------------------------------------------------------------
+[debug] [2021-12-01T01:06:15.081Z] Command:       /Users/nishiguchitaichi/.nodebrew/node/v12.18.4/bin/node /Users/nishiguchitaichi/Desktop/udemy_hamusan/chat-application/idobatakaigi1125/node_modules/.bin/firebase deploy
+[debug] [2021-12-01T01:06:15.081Z] CLI Version:   8.12.1
+[debug] [2021-12-01T01:06:15.082Z] Platform:      darwin
+[debug] [2021-12-01T01:06:15.082Z] Node Version:  v12.18.4
+[debug] [2021-12-01T01:06:15.096Z] Time:          Wed Dec 01 2021 10:06:15 GMT+0900 (Japan Standard Time)
+[debug] [2021-12-01T01:06:15.097Z] ----------------------------------------------------------------------
+[debug] [2021-12-01T01:06:15.097Z] 
+[debug] [2021-12-01T01:06:15.125Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-12-01T01:06:15.126Z] > authorizing via signed-in user
+[debug] [2021-12-01T01:06:15.126Z] [iam] checking project chat-appliation-idobatakaigi for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-12-01T01:06:15.135Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/chat-appliation-idobatakaigi:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-12-01T01:06:16.108Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 01 Dec 2021 01:06:16 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=613","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-01T01:06:16.110Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/chat-appliation-idobatakaigi  
+ 
+[debug] [2021-12-01T01:06:16.609Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 01 Dec 2021 01:06:16 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'chat-appliation-idobatakaigi'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-12-01T01:06:16.616Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/chat-appliation-idobatakaigi-default-rtdb/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-12-01T01:06:17.590Z] <<< HTTP RESPONSE 500 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Wed, 01 Dec 2021 01:06:17 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-01T01:06:17.591Z] <<< HTTP RESPONSE BODY {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2021-12-01T01:06:17.845Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500,
+    "body": {
+      "error": {
+        "code": 500,
+        "message": "Internal error encountered.",
+        "status": "INTERNAL"
+      }
+    },
+    "headers": {
+      "vary": "X-Origin, Referer, Origin,Accept-Encoding",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Wed, 01 Dec 2021 01:06:17 GMT",
+      "server": "ESF",
+      "cache-control": "private",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"",
+      "accept-ranges": "none",
+      "transfer-encoding": "chunked"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "firebasehosting.googleapis.com",
+        "port": 443,
+        "hostname": "firebasehosting.googleapis.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1beta1/sites/chat-appliation-idobatakaigi-default-rtdb/versions",
+        "path": "/v1beta1/sites/chat-appliation-idobatakaigi-default-rtdb/versions",
+        "href": "https://firebasehosting.googleapis.com/v1beta1/sites/chat-appliation-idobatakaigi-default-rtdb/versions"
+      },
+      "method": "POST"
+    }
+  }
+}
+[debug] [2021-12-01T01:08:15.043Z] ----------------------------------------------------------------------
+[debug] [2021-12-01T01:08:15.049Z] Command:       /Users/nishiguchitaichi/.nodebrew/node/v12.18.4/bin/node /Users/nishiguchitaichi/Desktop/udemy_hamusan/chat-application/idobatakaigi1125/node_modules/.bin/firebase deploy
+[debug] [2021-12-01T01:08:15.049Z] CLI Version:   8.12.1
+[debug] [2021-12-01T01:08:15.049Z] Platform:      darwin
+[debug] [2021-12-01T01:08:15.049Z] Node Version:  v12.18.4
+[debug] [2021-12-01T01:08:15.066Z] Time:          Wed Dec 01 2021 10:08:15 GMT+0900 (Japan Standard Time)
+[debug] [2021-12-01T01:08:15.066Z] ----------------------------------------------------------------------
+[debug] [2021-12-01T01:08:15.066Z] 
+[debug] [2021-12-01T01:08:15.083Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-12-01T01:08:15.083Z] > authorizing via signed-in user
+[debug] [2021-12-01T01:08:15.083Z] [iam] checking project chat-appliation-idobatakaigi for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-12-01T01:08:15.095Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/chat-appliation-idobatakaigi:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-12-01T01:08:16.239Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 01 Dec 2021 01:08:16 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=620","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-01T01:08:16.242Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/chat-appliation-idobatakaigi  
+ 
+[debug] [2021-12-01T01:08:16.835Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 01 Dec 2021 01:08:16 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'chat-appliation-idobatakaigi'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-12-01T01:08:16.843Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/chat-appliation-idobatakaigi-default-rtdb/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-12-01T01:08:17.968Z] <<< HTTP RESPONSE 500 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Wed, 01 Dec 2021 01:08:17 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-01T01:08:17.969Z] <<< HTTP RESPONSE BODY {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2021-12-01T01:08:18.222Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500,
+    "body": {
+      "error": {
+        "code": 500,
+        "message": "Internal error encountered.",
+        "status": "INTERNAL"
+      }
+    },
+    "headers": {
+      "vary": "X-Origin, Referer, Origin,Accept-Encoding",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Wed, 01 Dec 2021 01:08:17 GMT",
+      "server": "ESF",
+      "cache-control": "private",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"",
+      "accept-ranges": "none",
+      "transfer-encoding": "chunked"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "firebasehosting.googleapis.com",
+        "port": 443,
+        "hostname": "firebasehosting.googleapis.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1beta1/sites/chat-appliation-idobatakaigi-default-rtdb/versions",
+        "path": "/v1beta1/sites/chat-appliation-idobatakaigi-default-rtdb/versions",
+        "href": "https://firebasehosting.googleapis.com/v1beta1/sites/chat-appliation-idobatakaigi-default-rtdb/versions"
+      },
+      "method": "POST"
+    }
+  }
+}
+[debug] [2021-12-01T01:12:33.766Z] ----------------------------------------------------------------------
+[debug] [2021-12-01T01:12:33.772Z] Command:       /Users/nishiguchitaichi/.nodebrew/node/v12.18.4/bin/node /Users/nishiguchitaichi/Desktop/udemy_hamusan/chat-application/idobatakaigi1125/node_modules/.bin/firebase deploy
+[debug] [2021-12-01T01:12:33.772Z] CLI Version:   8.12.1
+[debug] [2021-12-01T01:12:33.772Z] Platform:      darwin
+[debug] [2021-12-01T01:12:33.772Z] Node Version:  v12.18.4
+[debug] [2021-12-01T01:12:33.785Z] Time:          Wed Dec 01 2021 10:12:33 GMT+0900 (Japan Standard Time)
+[debug] [2021-12-01T01:12:33.785Z] ----------------------------------------------------------------------
+[debug] [2021-12-01T01:12:33.786Z] 
+[debug] [2021-12-01T01:12:33.802Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-12-01T01:12:33.803Z] > authorizing via signed-in user
+[debug] [2021-12-01T01:12:33.803Z] [iam] checking project chat-appliation-idobatakaigi for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-12-01T01:12:33.810Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/chat-appliation-idobatakaigi:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-12-01T01:12:35.002Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 01 Dec 2021 01:12:34 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=636","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-01T01:12:35.005Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/chat-appliation-idobatakaigi  
+ 
+[debug] [2021-12-01T01:12:35.606Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 01 Dec 2021 01:12:35 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'chat-appliation-idobatakaigi'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-12-01T01:12:35.613Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/chat-appliation-idobatakaigi-default-rtdb/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-12-01T01:12:36.732Z] <<< HTTP RESPONSE 500 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Wed, 01 Dec 2021 01:12:36 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-01T01:12:36.732Z] <<< HTTP RESPONSE BODY {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2021-12-01T01:12:36.947Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500,
+    "body": {
+      "error": {
+        "code": 500,
+        "message": "Internal error encountered.",
+        "status": "INTERNAL"
+      }
+    },
+    "headers": {
+      "vary": "X-Origin, Referer, Origin,Accept-Encoding",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Wed, 01 Dec 2021 01:12:36 GMT",
+      "server": "ESF",
+      "cache-control": "private",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"",
+      "accept-ranges": "none",
+      "transfer-encoding": "chunked"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "firebasehosting.googleapis.com",
+        "port": 443,
+        "hostname": "firebasehosting.googleapis.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1beta1/sites/chat-appliation-idobatakaigi-default-rtdb/versions",
+        "path": "/v1beta1/sites/chat-appliation-idobatakaigi-default-rtdb/versions",
+        "href": "https://firebasehosting.googleapis.com/v1beta1/sites/chat-appliation-idobatakaigi-default-rtdb/versions"
+      },
+      "method": "POST"
+    }
+  }
+}
+[debug] [2021-12-01T01:14:33.851Z] ----------------------------------------------------------------------
+[debug] [2021-12-01T01:14:33.854Z] Command:       /Users/nishiguchitaichi/.nodebrew/node/v12.18.4/bin/node /Users/nishiguchitaichi/Desktop/udemy_hamusan/chat-application/idobatakaigi1125/node_modules/.bin/firebase deploy
+[debug] [2021-12-01T01:14:33.855Z] CLI Version:   8.12.1
+[debug] [2021-12-01T01:14:33.855Z] Platform:      darwin
+[debug] [2021-12-01T01:14:33.855Z] Node Version:  v12.18.4
+[debug] [2021-12-01T01:14:33.858Z] Time:          Wed Dec 01 2021 10:14:33 GMT+0900 (Japan Standard Time)
+[debug] [2021-12-01T01:14:33.858Z] ----------------------------------------------------------------------
+[debug] [2021-12-01T01:14:33.859Z] 
+[debug] [2021-12-01T01:14:33.878Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-12-01T01:14:33.878Z] > authorizing via signed-in user
+[debug] [2021-12-01T01:14:33.879Z] [iam] checking project chat-appliation-idobatakaigi for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-12-01T01:14:33.887Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/chat-appliation-idobatakaigi:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-12-01T01:14:34.906Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 01 Dec 2021 01:14:34 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=623","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-01T01:14:34.909Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/chat-appliation-idobatakaigi  
+ 
+[debug] [2021-12-01T01:14:35.517Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 01 Dec 2021 01:14:35 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'chat-appliation-idobatakaigi'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-12-01T01:14:35.521Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/chat-appliation-idobatakaigi-default-rtdb/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-12-01T01:14:36.640Z] <<< HTTP RESPONSE 500 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Wed, 01 Dec 2021 01:14:36 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-01T01:14:36.640Z] <<< HTTP RESPONSE BODY {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2021-12-01T01:14:36.893Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500,
+    "body": {
+      "error": {
+        "code": 500,
+        "message": "Internal error encountered.",
+        "status": "INTERNAL"
+      }
+    },
+    "headers": {
+      "vary": "X-Origin, Referer, Origin,Accept-Encoding",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Wed, 01 Dec 2021 01:14:36 GMT",
+      "server": "ESF",
+      "cache-control": "private",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"",
+      "accept-ranges": "none",
+      "transfer-encoding": "chunked"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "firebasehosting.googleapis.com",
+        "port": 443,
+        "hostname": "firebasehosting.googleapis.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1beta1/sites/chat-appliation-idobatakaigi-default-rtdb/versions",
+        "path": "/v1beta1/sites/chat-appliation-idobatakaigi-default-rtdb/versions",
+        "href": "https://firebasehosting.googleapis.com/v1beta1/sites/chat-appliation-idobatakaigi-default-rtdb/versions"
+      },
+      "method": "POST"
+    }
+  }
+}
+[debug] [2021-12-01T01:14:52.959Z] ----------------------------------------------------------------------
+[debug] [2021-12-01T01:14:52.962Z] Command:       /Users/nishiguchitaichi/.nodebrew/node/v12.18.4/bin/node /Users/nishiguchitaichi/Desktop/udemy_hamusan/chat-application/idobatakaigi1125/node_modules/.bin/firebase deploy
+[debug] [2021-12-01T01:14:52.962Z] CLI Version:   8.12.1
+[debug] [2021-12-01T01:14:52.963Z] Platform:      darwin
+[debug] [2021-12-01T01:14:52.963Z] Node Version:  v12.18.4
+[debug] [2021-12-01T01:14:52.964Z] Time:          Wed Dec 01 2021 10:14:52 GMT+0900 (Japan Standard Time)
+[debug] [2021-12-01T01:14:52.964Z] ----------------------------------------------------------------------
+[debug] [2021-12-01T01:14:52.964Z] 
+[debug] [2021-12-01T01:14:52.980Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-12-01T01:14:52.981Z] > authorizing via signed-in user
+[debug] [2021-12-01T01:14:52.981Z] [iam] checking project chat-appliation-idobatakaigi for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-12-01T01:14:52.984Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/chat-appliation-idobatakaigi:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-12-01T01:14:53.851Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 01 Dec 2021 01:14:53 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=615","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-01T01:14:53.855Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/chat-appliation-idobatakaigi  
+ 
+[debug] [2021-12-01T01:14:54.459Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 01 Dec 2021 01:14:54 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'chat-appliation-idobatakaigi'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-12-01T01:14:54.466Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/chat-appliation-idobatakaigi-default-rtdb/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-12-01T01:14:55.586Z] <<< HTTP RESPONSE 500 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Wed, 01 Dec 2021 01:14:55 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-01T01:14:55.586Z] <<< HTTP RESPONSE BODY {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2021-12-01T01:14:55.791Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500,
+    "body": {
+      "error": {
+        "code": 500,
+        "message": "Internal error encountered.",
+        "status": "INTERNAL"
+      }
+    },
+    "headers": {
+      "vary": "X-Origin, Referer, Origin,Accept-Encoding",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Wed, 01 Dec 2021 01:14:55 GMT",
+      "server": "ESF",
+      "cache-control": "private",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"",
+      "accept-ranges": "none",
+      "transfer-encoding": "chunked"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "firebasehosting.googleapis.com",
+        "port": 443,
+        "hostname": "firebasehosting.googleapis.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1beta1/sites/chat-appliation-idobatakaigi-default-rtdb/versions",
+        "path": "/v1beta1/sites/chat-appliation-idobatakaigi-default-rtdb/versions",
+        "href": "https://firebasehosting.googleapis.com/v1beta1/sites/chat-appliation-idobatakaigi-default-rtdb/versions"
+      },
+      "method": "POST"
+    }
+  }
+}
+[debug] [2021-12-01T01:22:46.056Z] ----------------------------------------------------------------------
+[debug] [2021-12-01T01:22:46.060Z] Command:       /Users/nishiguchitaichi/.nodebrew/node/v12.18.4/bin/node /Users/nishiguchitaichi/Desktop/udemy_hamusan/chat-application/idobatakaigi1125/node_modules/.bin/firebase deploy
+[debug] [2021-12-01T01:22:46.060Z] CLI Version:   8.12.1
+[debug] [2021-12-01T01:22:46.061Z] Platform:      darwin
+[debug] [2021-12-01T01:22:46.061Z] Node Version:  v12.18.4
+[debug] [2021-12-01T01:22:46.062Z] Time:          Wed Dec 01 2021 10:22:46 GMT+0900 (Japan Standard Time)
+[debug] [2021-12-01T01:22:46.062Z] ----------------------------------------------------------------------
+[debug] [2021-12-01T01:22:46.062Z] 
+[debug] [2021-12-01T01:22:46.077Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-12-01T01:22:46.078Z] > authorizing via signed-in user
+[debug] [2021-12-01T01:22:46.078Z] [iam] checking project chat-appliation-idobatakaigi for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-12-01T01:22:46.081Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/chat-appliation-idobatakaigi:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-12-01T01:22:47.063Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 01 Dec 2021 01:22:46 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=626","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-01T01:22:47.067Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/chat-appliation-idobatakaigi  
+ 
+[debug] [2021-12-01T01:22:47.669Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 01 Dec 2021 01:22:47 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'chat-appliation-idobatakaigi'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-12-01T01:22:47.677Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/chat-appliation-idobatakaigi-default-rtdb/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-12-01T01:22:48.796Z] <<< HTTP RESPONSE 500 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Wed, 01 Dec 2021 01:22:48 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-01T01:22:48.796Z] <<< HTTP RESPONSE BODY {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2021-12-01T01:22:49.034Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500,
+    "body": {
+      "error": {
+        "code": 500,
+        "message": "Internal error encountered.",
+        "status": "INTERNAL"
+      }
+    },
+    "headers": {
+      "vary": "X-Origin, Referer, Origin,Accept-Encoding",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Wed, 01 Dec 2021 01:22:48 GMT",
+      "server": "ESF",
+      "cache-control": "private",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"",
+      "accept-ranges": "none",
+      "transfer-encoding": "chunked"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "firebasehosting.googleapis.com",
+        "port": 443,
+        "hostname": "firebasehosting.googleapis.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1beta1/sites/chat-appliation-idobatakaigi-default-rtdb/versions",
+        "path": "/v1beta1/sites/chat-appliation-idobatakaigi-default-rtdb/versions",
+        "href": "https://firebasehosting.googleapis.com/v1beta1/sites/chat-appliation-idobatakaigi-default-rtdb/versions"
+      },
+      "method": "POST"
+    }
+  }
+}
+[debug] [2021-12-01T02:05:18.174Z] ----------------------------------------------------------------------
+[debug] [2021-12-01T02:05:18.176Z] Command:       /Users/nishiguchitaichi/.nodebrew/node/v12.18.4/bin/node /Users/nishiguchitaichi/Desktop/udemy_hamusan/chat-application/idobatakaigi1125/node_modules/.bin/firebase deploy
+[debug] [2021-12-01T02:05:18.177Z] CLI Version:   8.12.1
+[debug] [2021-12-01T02:05:18.177Z] Platform:      darwin
+[debug] [2021-12-01T02:05:18.177Z] Node Version:  v12.18.4
+[debug] [2021-12-01T02:05:18.188Z] Time:          Wed Dec 01 2021 11:05:18 GMT+0900 (Japan Standard Time)
+[debug] [2021-12-01T02:05:18.188Z] ----------------------------------------------------------------------
+[debug] [2021-12-01T02:05:18.188Z] 
+[debug] [2021-12-01T02:05:18.204Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-12-01T02:05:18.204Z] > authorizing via signed-in user
+[debug] [2021-12-01T02:05:18.205Z] [iam] checking project chat-appliation-idobatakaigi for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-12-01T02:05:18.210Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-12-01T02:05:18.210Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-12-01T02:05:18.546Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Wed, 01 Dec 2021 02:05:18 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-01T02:05:18.569Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/chat-appliation-idobatakaigi:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-12-01T02:05:19.516Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 01 Dec 2021 02:05:19 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=638","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-01T02:05:19.518Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/chat-appliation-idobatakaigi  
+ 
+[debug] [2021-12-01T02:05:20.077Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 01 Dec 2021 02:05:20 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'chat-appliation-idobatakaigi'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-12-01T02:05:20.083Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/chat-appliation-idobatakaigi-default-rtdb/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-12-01T02:05:21.165Z] <<< HTTP RESPONSE 500 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Wed, 01 Dec 2021 02:05:21 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-01T02:05:21.166Z] <<< HTTP RESPONSE BODY {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2021-12-01T02:05:21.375Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500,
+    "body": {
+      "error": {
+        "code": 500,
+        "message": "Internal error encountered.",
+        "status": "INTERNAL"
+      }
+    },
+    "headers": {
+      "vary": "X-Origin, Referer, Origin,Accept-Encoding",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Wed, 01 Dec 2021 02:05:21 GMT",
+      "server": "ESF",
+      "cache-control": "private",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"",
+      "accept-ranges": "none",
+      "transfer-encoding": "chunked"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "firebasehosting.googleapis.com",
+        "port": 443,
+        "hostname": "firebasehosting.googleapis.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1beta1/sites/chat-appliation-idobatakaigi-default-rtdb/versions",
+        "path": "/v1beta1/sites/chat-appliation-idobatakaigi-default-rtdb/versions",
+        "href": "https://firebasehosting.googleapis.com/v1beta1/sites/chat-appliation-idobatakaigi-default-rtdb/versions"
+      },
+      "method": "POST"
+    }
+  }
+}
+[debug] [2021-12-01T02:08:27.815Z] ----------------------------------------------------------------------
+[debug] [2021-12-01T02:08:27.819Z] Command:       /Users/nishiguchitaichi/.nodebrew/node/v12.18.4/bin/node /Users/nishiguchitaichi/Desktop/udemy_hamusan/chat-application/idobatakaigi1125/node_modules/.bin/firebase deploy
+[debug] [2021-12-01T02:08:27.820Z] CLI Version:   8.12.1
+[debug] [2021-12-01T02:08:27.820Z] Platform:      darwin
+[debug] [2021-12-01T02:08:27.820Z] Node Version:  v12.18.4
+[debug] [2021-12-01T02:08:27.836Z] Time:          Wed Dec 01 2021 11:08:27 GMT+0900 (Japan Standard Time)
+[debug] [2021-12-01T02:08:27.836Z] ----------------------------------------------------------------------
+[debug] [2021-12-01T02:08:27.836Z] 
+[debug] [2021-12-01T02:08:27.853Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-12-01T02:08:27.853Z] > authorizing via signed-in user
+[debug] [2021-12-01T02:08:27.853Z] [iam] checking project chat-appliation-idobatakaigi for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-12-01T02:08:27.860Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/chat-appliation-idobatakaigi:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-12-01T02:08:28.757Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 01 Dec 2021 02:08:28 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=623","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-01T02:08:28.761Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/chat-appliation-idobatakaigi  
+ 
+[debug] [2021-12-01T02:08:29.277Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 01 Dec 2021 02:08:29 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'chat-appliation-idobatakaigi'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-12-01T02:08:29.284Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/chat-appliation-idobatakaigi-default-rtdb/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-12-01T02:08:30.300Z] <<< HTTP RESPONSE 500 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Wed, 01 Dec 2021 02:08:30 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-01T02:08:30.301Z] <<< HTTP RESPONSE BODY {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2021-12-01T02:08:30.515Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500,
+    "body": {
+      "error": {
+        "code": 500,
+        "message": "Internal error encountered.",
+        "status": "INTERNAL"
+      }
+    },
+    "headers": {
+      "vary": "X-Origin, Referer, Origin,Accept-Encoding",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Wed, 01 Dec 2021 02:08:30 GMT",
+      "server": "ESF",
+      "cache-control": "private",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"",
+      "accept-ranges": "none",
+      "transfer-encoding": "chunked"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "firebasehosting.googleapis.com",
+        "port": 443,
+        "hostname": "firebasehosting.googleapis.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1beta1/sites/chat-appliation-idobatakaigi-default-rtdb/versions",
+        "path": "/v1beta1/sites/chat-appliation-idobatakaigi-default-rtdb/versions",
+        "href": "https://firebasehosting.googleapis.com/v1beta1/sites/chat-appliation-idobatakaigi-default-rtdb/versions"
+      },
+      "method": "POST"
+    }
+  }
+}
